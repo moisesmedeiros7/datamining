@@ -26,7 +26,7 @@ public class PrograminhasImportarCSV {
 	private Scanner dados;
 	private Scanner dadostexto;
 	//String diretorio = "D:\\database\\";
-	String diretorio = "/home/moises/Área de Trabalho/database/";
+	String diretorio = "C:\\Users\\moise\\Desktop\\";
 
     public static void main(String[] args) throws ParseException, IOException, Exception {
         PrograminhasImportarCSV csv = new PrograminhasImportarCSV();
@@ -882,10 +882,10 @@ public class PrograminhasImportarCSV {
     	tab[0][tab[0].length-1] = "classe";  
     	for (int l = 1; l < tab.length; l++) {
     		if ((tab[l][26]).contains("bito")) {
-    			tab[l][tab[0].length-1] = "Óbito";
+    			tab[l][tab[0].length-1] = "1";
         	}
         	if ((tab[l][26]).contains("Cura")) {
-        		tab[l][tab[0].length-1] = "Cura";
+        		tab[l][tab[0].length-1] = "0";
         	}
     		
     	 }
